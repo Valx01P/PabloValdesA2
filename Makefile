@@ -1,10 +1,10 @@
-all: activity
+all: salary
 
-activity: activity.o
-	gcc activity.o -o activity
+salary: salary.o
+	gcc salary.o -o salary
 
-activity.o: activity.c
-	gcc -c activity.c -o activity.o
+salary.o: salary.c
+	gcc -c salary.c -o salary.o
 
 clean:
-	rm -f activity activity.o core *~
+	rm -f salary salary.o core *~
