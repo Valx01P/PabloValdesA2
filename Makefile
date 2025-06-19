@@ -1,10 +1,10 @@
-all: salary
+all: pointers
 
-salary: salary.o
-	gcc salary.o -o salary
+pointers: pointers.o
+	gcc pointers.o -o pointers
 
-salary.o: salary.c
-	gcc -c salary.c -o salary.o
+pointers.o: pointers.c
+	gcc -c pointers.c -o pointers.o
 
 clean:
-	rm -f salary salary.o core *~
+	rm -f pointers pointers.o
