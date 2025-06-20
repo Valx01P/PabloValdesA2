@@ -1,10 +1,10 @@
-all: pointers
+all: memact
 
-pointers: pointers.o
-	gcc pointers.o -o pointers
+memact: memact.o
+	gcc memact.o -o memact
 
-pointers.o: pointers.c
-	gcc -c pointers.c -o pointers.o
+memact.o: memact.c
+	gcc -c memact.c -o memact.o
 
 clean:
-	rm -f pointers pointers.o
+	rm -f memact memact.o
