@@ -1,10 +1,10 @@
-all: memact
+all: mystruct
 
-memact: memact.o
-	gcc memact.o -o memact
+mystruct: mystruct.o
+	gcc mystruct.o -o mystruct
 
-memact.o: memact.c
-	gcc -c memact.c -o memact.o
+mystruct.o: mystruct.c
+	gcc -c mystruct.c -o mystruct.o
 
 clean:
-	rm -f memact memact.o
+	rm -f mystruct mystruct.o
