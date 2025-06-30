@@ -1,10 +1,10 @@
-all: mystruct
+all: doublesort
 
-mystruct: mystruct.o
-	gcc mystruct.o -o mystruct
+doublesort: doublesort.o
+	gcc doublesort.o -o doublesort
 
-mystruct.o: mystruct.c
-	gcc -c mystruct.c -o mystruct.o
+doublesort.o: doublesort.c
+	gcc -c doublesort.c -o doublesort.o
 
 clean:
-	rm -f mystruct mystruct.o
+	rm -f doublesort doublesort.o
