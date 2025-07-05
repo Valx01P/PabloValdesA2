@@ -1,10 +1,10 @@
-all: doublesort
+all: bits
 
-doublesort: doublesort.o
-	gcc doublesort.o -o doublesort
+bits: bits.o
+	gcc bits.o -o bits
 
-doublesort.o: doublesort.c
-	gcc -c doublesort.c -o doublesort.o
+bits.o: bits.c
+	gcc -c bits.c -o bits.o
 
 clean:
-	rm -f doublesort doublesort.o
+	rm -f bits bits.o
