@@ -1,10 +1,10 @@
-all: bits
+all: parseline
 
-bits: bits.o
-	gcc bits.o -o bits
+parseline: parseline.o
+	gcc parseline.o -o parseline
 
-bits.o: bits.c
-	gcc -c bits.c -o bits.o
+parseline.o: parseline.c
+	gcc -c parseline.c -o parseline.o
 
 clean:
-	rm -f bits bits.o
+	rm -f parseline parseline.o
