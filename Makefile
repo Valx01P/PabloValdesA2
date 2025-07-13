@@ -1,10 +1,10 @@
-all: parseline
+all: bitflip
 
-parseline: parseline.o
-	gcc parseline.o -o parseline
+bitflip: bitflip.o
+	gcc -o bitflip bitflip.o
 
-parseline.o: parseline.c
-	gcc -c parseline.c -o parseline.o
+bitflip.o: bitflip.c
+	gcc -c bitflip.c
 
 clean:
-	rm -f parseline parseline.o
+	rm -f bitflip bitflip.o
