@@ -1,10 +1,10 @@
-all: bitflip
+all: forkchildren
 
-bitflip: bitflip.o
-	gcc -o bitflip bitflip.o
+forkchildren: forkchildren.o
+	gcc -o forkchildren forkchildren.o
 
-bitflip.o: bitflip.c
-	gcc -c bitflip.c
+forkchildren.o: forkchildren.c
+	gcc -c forkchildren.c
 
 clean:
-	rm -f bitflip bitflip.o
+	rm -f forkchildren forkchildren.o
