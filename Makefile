@@ -1,10 +1,10 @@
-all: forkchildren
+all: threadact
 
-forkchildren: forkchildren.o
-	gcc -o forkchildren forkchildren.o
+threadact: threadact.o
+	gcc -o threadact threadact.o -pthread
 
-forkchildren.o: forkchildren.c
-	gcc -c forkchildren.c
+threadact.o: threadact.c
+	gcc -c threadact.c
 
 clean:
-	rm -f forkchildren forkchildren.o
+	rm -f threadact threadact.o
